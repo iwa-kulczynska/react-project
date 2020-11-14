@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Card from '../Card/Card';
 import Icon from '../Icon/Icon';
 //import Creator from '../Creator/Creator';
+import {settings} from '../../data/dataStore';
 
 
 class Column extends React.Component {
@@ -14,6 +15,9 @@ class Column extends React.Component {
     title: PropTypes.string,
     icon: PropTypes.string,
     cards: PropTypes.array,
+  }
+  static defaultProps = {
+    icon: settings.defaultColumnIcon,
   }
 
   render() {
@@ -30,6 +34,7 @@ class Column extends React.Component {
             <Card key={cardData.id} {...cardData} />
           ))}
         </div>
+        
         {/*
         <div className={styles.creator}>
           <Creator text={settings.cardCreatorText} action={title => {this.addCard(title);}}/>
