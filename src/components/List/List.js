@@ -12,10 +12,11 @@ class List extends React.Component {
     columns: this.props.columns || [],
   }
   static propTypes = {
+    id: PropTypes.string,
     title: PropTypes.node,
     description: PropTypes.node,
-    columns: PropTypes.array,
     image: PropTypes.string,
+    columns: PropTypes.array,
     addColumn: PropTypes.func,
   }
   static defaultProps = {
