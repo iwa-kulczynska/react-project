@@ -14,7 +14,7 @@ const Hero = props => (
 
 Hero.propTypes = {
   titleText: PropTypes.node,
-  url: PropTypes.node,
+  url: PropTypes.string,
 };
 
 export default Hero;
