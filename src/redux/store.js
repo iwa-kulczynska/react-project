@@ -9,6 +9,7 @@ const initialState = {
   lists: initialStoreData.lists,
   columns: initialStoreData.columns,
   cards: initialStoreData.cards,
+  pages: initialStoreData.pages,
   searchString: '',
 };
 
